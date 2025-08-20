@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -10,144 +11,515 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-<!-- Background Canvas -->
-<canvas id="bg-canvas"></canvas>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
 
-<!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="overlay"></div>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="overlay"></div>
 
-    <!-- Sidebar -->
-    <nav class="sidebar">
-        <a href="#home" title="Home"><button class="active"><i class="fas fa-home"></i></button></a>
-        <a href="#about" title="About"><button><i class="fas fa-user"></i></button></a>
-        <a href="#resume" title="Resume"><button><i class="fas fa-file-alt"></i></button></a>
-        <a href="#projects" title="Projects"><button><i class="fas fa-folder"></i></button></a>
-        <a href="#bugs" title="Bug Reports"><button><i class="fas fa-bug"></i></button></a>
-        <a href="#contact" title="Contact"><button><i class="fas fa-envelope"></i></button></a>
-    </nav>
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <a href="#home" title="Home"><button class="active"><i class="fas fa-home"></i></button></a>
+            <a href="#about" title="About"><button><i class="fas fa-user"></i></button></a>
+            <a href="#resume" title="Resume"><button><i class="fas fa-file-alt"></i></button></a>
+            <a href="#projects" title="Projects"><button><i class="fas fa-folder"></i></button></a>
+            <a href="#bugs" title="Bug Reports"><button><i class="fas fa-bug"></i></button></a>
+            <a href="#contact" title="Contact"><button><i class="fas fa-envelope"></i></button></a>
+        </nav>
 
-    <!-- Intro -->
-    <div class="intro">
-        <h1>Raj Kumar</h1>
-        <h2>I'm <span id="role"></span>|</h2>
-        <div class="social">
-            <a href="https://github.com" target="_blank">🕵️‍♂️</a>
-            <a href="https://www.linkedin.com/in/raj-kumar-aa39p6002/" target="_blank">💼</a>
-        </div>
-    </div>
-
-    <!-- Device Mockups -->
-    <div class="device-mockups">
-        <div class="macbook">
-            <div class="screen"></div>
-            <div class="bottom"></div>
-        </div>
-        <div class="ipad">
-            <div class="screen"></div>
-        </div>
-        <div class="iphone">
-            <div class="screen"></div>
-        </div>
-    </div>
-</section>
-
-<!-- About Section -->
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="about-content">
-        <p class="highlight">Mobile & Web Application Tester with 2.9 years of hands-on experience.</p>
-
-        <h3>Testing Expertise</h3>
-        <ul>
-            <li>Expert in functional, regression, UI/UX, and API testing across multiple domains</li>
-            <li>Delivered high-quality solutions for logistics, e-commerce, fitness, and healthcare platforms</li>
-            <li>Ensures bug-free, user-centric applications with rigorous testing methodologies</li>
-        </ul>
-
-        <h3>Technical Proficiencies</h3>
-        <ul>
-            <li>Proficient in JIRA, MantisBT, and Postman for effective defect tracking and reporting</li>
-            <li>Experienced in Agile/Scrum frameworks, driving timely and efficient project delivery</li>
-            <li>Skilled in workflow automation using n8n, optimizing repetitive tasks</li>
-        </ul>
-
-        <h3>Key Achievements</h3>
-        <ul>
-            <li>Integrated WhatsApp bots, Google Sheets, and APIs to streamline operations</li>
-            <li>Improved reporting accuracy and project management efficiency across teams</li>
-            <li>Identified and resolved critical defects to enhance software performance</li>
-        </ul>
-
-        <p class="highlight">Committed to delivering seamless user experiences and continuous process improvement.</p>
-    </div>
-</section>
-
-<style>
-    .about-content {
-        max-width: 800px;
-        margin: 0 auto;
-        line-height: 1.6;
-    }
-
-    .about-content h3 {
-        color: #2c3e50;
-        margin: 1.5em 0 0.8em;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 0.3em;
-        display: inline-block;
-    }
-
-    .about-content ul {
-        padding-left: 1.5em;
-    }
-
-    .about-content li {
-        margin-bottom: 0.5em;
-    }
-
-    .highlight {
-        background-color: #f8f9fa;
-        padding: 1em;
-        border-left: 4px solid #3498db;
-        font-style: italic;
-        margin: 1.5em 0;
-    }
-</style>
-
-<!-- Resume Section -->
-<section id="resume" class="section">
-    <div class="resume-container">
-        <div class="resume-header">
+        <!-- Intro -->
+        <div class="intro">
             <h1>Raj Kumar</h1>
-            <div class="contact-info">
-                <p>Ahmedabad, Gujarat, 382210</p>
-                <p>rp.rajkumar02@gmail.com | (+91) 8240000784</p>
+            <h2>I'm <span id="role"></span>|</h2>
+            <div class="social">
+                <a href="https://github.com" target="_blank">🕵️‍♂️</a>
+                <a href="https://www.linkedin.com/in/raj-kumar-aa39p6002/" target="_blank">💼</a>
             </div>
         </div>
 
-        <div class="resume-section">
-            <h2>PROFILE SUMMARY</h2>
-            <p>Mobile & Web Application Tester with 2.9 years of experience in functional, regression, UI/UX, and API testing across logistics, e-commerce, fitness, and healthcare domains. Skilled in JIRA, MantisBT, Postman, and Agile/Scrum, ensuring defect-free, user-focused product delivery. Experienced in workflow automation using n8n, integrating WhatsApp bots, Google Sheets, and APIs to streamline reporting and project management.</p>
+        <!-- Device Mockups -->
+        <div class="device-mockups">
+            <div class="macbook">
+                <div class="screen"></div>
+                <div class="bottom"></div>
+            </div>
+            <div class="ipad">
+                <div class="screen"></div>
+            </div>
+            <div class="iphone">
+                <div class="screen"></div>
+            </div>
         </div>
+    </section>
 
-        <div class="resume-section">
-            <h2>PROFESSIONAL EXPERIENCE</h2>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p class="highlight">Mobile & Web Application Tester with 2.9 years of hands-on experience.</p>
 
-            <div class="experience-item reveal" style="--delay: 1">
-                <h3>Quality Analyst</h3>
-                <p class="company">SpaceO Technology (Manual & Web/Mobile Application Testing) | May 2025 - Aug 2025</p>
-                <p>Mobile & Web Application Tester with hands-on experience in six diverse projects spanning logistics, ride-hailing, e-commerce, fitness, location tracking, and gamified challenge platforms. Skilled in functional, regression, UI/UX, and API testing, with expertise in tools such as JIRA, MantisBT, and Jenkins, ensuring high-quality, user-focused product delivery in Agile environments.</p>
+            <h3>Testing Expertise</h3>
+            <ul>
+                <li>Expert in functional, regression, UI/UX, and API testing across multiple domains</li>
+                <li>Delivered high-quality solutions for logistics, e-commerce, fitness, and healthcare platforms</li>
+                <li>Ensures bug-free, user-centric applications with rigorous testing methodologies</li>
+            </ul>
+
+            <h3>Technical Proficiencies</h3>
+            <ul>
+                <li>Proficient in JIRA, MantisBT, and Postman for effective defect tracking and reporting</li>
+                <li>Experienced in Agile/Scrum frameworks, driving timely and efficient project delivery</li>
+                <li>Skilled in workflow automation using n8n, optimizing repetitive tasks</li>
+            </ul>
+
+            <h3>Key Achievements</h3>
+            <ul>
+                <li>Integrated WhatsApp bots, Google Sheets, and APIs to streamline operations</li>
+                <li>Improved reporting accuracy and project management efficiency across teams</li>
+                <li>Identified and resolved critical defects to enhance software performance</li>
+            </ul>
+
+            <p class="highlight">Committed to delivering seamless user experiences and continuous process improvement.
+            </p>
+        </div>
+    </section>
+
+    <style>
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .about-content h3 {
+            color: #2c3e50;
+            margin: 1.5em 0 0.8em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.3em;
+            display: inline-block;
+        }
+
+        .about-content ul {
+            padding-left: 1.5em;
+        }
+
+        .about-content li {
+            margin-bottom: 0.5em;
+        }
+
+        .highlight {
+            padding: 1em;
+            border-left: 4px solid #3498db;
+            font-style: italic;
+            margin: 1.5em 0;
+        }
+    </style>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="resume-container">
+            <div class="resume-header">
             </div>
 
-            <div class="experience-item reveal" style="--delay: 1">
-                <h3>Manual Test Engineer</h3>
-                <p class="company">Eptain & Company | Nov 2022 – May 2025</p>
-                <p>Worked in the E-commerce domain, focusing on two major verticals: Pharmacy (prescribed medicines for pets) and Diet & Nutrition (dietary products and supplements for pet wellness).</p>
+            <div class="resume-section">
+                <h2>PROFILE SUMMARY</h2>
+                <p>Mobile & Web Application Tester with 2.9 years of experience in functional, regression, UI/UX, and
+                    API testing across logistics, e-commerce, fitness, and healthcare domains. Skilled in JIRA,
+                    MantisBT, Postman, and Agile/Scrum, ensuring defect-free, user-focused product delivery. Experienced
+                    in workflow automation using n8n, integrating WhatsApp bots, Google Sheets, and APIs to streamline
+                    reporting and project management.</p>
+            </div>
+
+            <div class="resume-section">
+                <h2>PROFESSIONAL EXPERIENCE</h2>
+
+                <div class="experience-item reveal" style="--delay: 1">
+                    <h3>Quality Analyst</h3>
+                    <p class="company">SpaceO Technology (Manual & Web/Mobile Application Testing) | May 2025 - Aug 2025
+                    </p>
+                    <p>Mobile & Web Application Tester with hands-on experience in six diverse projects spanning
+                        logistics, ride-hailing, e-commerce, fitness, location tracking, and gamified challenge
+                        platforms. Skilled in functional, regression, UI/UX, and API testing, with expertise in tools
+                        such as JIRA, MantisBT, and Jenkins, ensuring high-quality, user-focused product delivery in
+                        Agile environments.</p>
+                </div>
+
+                <div class="experience-item reveal" style="--delay: 1">
+                    <h3>Manual Test Engineer</h3>
+                    <p class="company">Eptain & Company | Nov 2022 – May 2025</p>
+                    <p>Worked in the E-commerce domain, focusing on two major verticals: Pharmacy (prescribed medicines
+                        for pets) and Diet & Nutrition (dietary products and supplements for pet wellness).</p>
+
+                    <div class="project">
+                        <h4>E-commerce Platform for Pet Health & Nutrition</h4>
+                        <ul>
+                            <li>Designed and executed comprehensive test plans covering full workflows</li>
+                            <li>Conducted manual & cross-browser testing (Chrome, Firefox, Safari)</li>
+                            <li>Executed regression testing after feature updates</li>
+                            <li>Collaborated with dev & product teams during UAT</li>
+                        </ul>
+                    </div>
+                    <div class="project">
+                        <h4>E-commerce Platform for Beauty & Wellness</h4>
+                        <ul>
+                            <li>Tested recommendation engine, reviews, checkout, and payment flows</li>
+                            <li>Conducted regression and UI/UX testing after updates</li>
+                            <li>Verified data integrity in recommendations and search flows</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item reveal" style="--delay: 1">
+                    <h3>Assistant Engineer Operation</h3>
+                    <p class="company">Vivek Construction (TATA Steel) | Jul 2020 - Sep 2022</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>KEY PROJECTS</h2>
 
                 <div class="project">
-                    <h4>E-commerce Platform for Pet Health & Nutrition</h4>
+                    <h3>On-Demand Logistics, Transportation & Ride-Hailing Platform</h3>
+                    <p><strong>Role:</strong> Mobile & Web Application Tester</p>
+                    <p>Worked on an integrated mobility and commerce platform offering goods delivery, passenger
+                        ride-hailing, digital wallet, and e-commerce services.</p>
+                    <p><strong>Technologies:</strong> JIRA, Postman, Mobile Testing (Android/iOS)</p>
+                </div>
+
+                <div class="project">
+                    <h3>Health & Lifestyle Platform</h3>
+                    <p><strong>Role:</strong> Mobile & Web Application Tester</p>
+                    <p>Tested fitness and wellness platform with personalized workout plans, video training, and
+                        progress tracking.</p>
+                    <p><strong>Technologies:</strong> JIRA, MantisBT, API Testing</p>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>KEY RESPONSIBILITIES</h2>
+                <ul class="responsibilities">
+                    <li>Conducted functional, regression, smoke, and UI/UX testing for mobile (Android/iOS) and web
+                        applications across diverse domains</li>
+                    <li>Created, reviewed, and executed detailed test cases to validate core functionalities, business
+                        logic, and user flows</li>
+                    <li>Performed cross-platform and cross-browser testing to ensure consistent performance and
+                        compatibility</li>
+                    <li>Validated integrations for payment gateways, GPS tracking, chat systems, and booking flows</li>
+                    <li>Logged and tracked defects using JIRA and MantisBT, collaborating with developers for resolution
+                    </li>
+                    <li>Utilized Postman for API testing to verify data accuracy and error handling</li>
+                    <li>Participated in Agile/Scrum ceremonies (stand-ups, sprint planning, retrospectives)</li>
+                    <li>Ensured compliance with security, data privacy, and performance standards</li>
+                    <li>Supported CI/CD pipelines using Jenkins for automated build verification</li>
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h2>ACHIEVEMENTS</h2>
+                <ul class="achievements">
+                    <li>Delivered 10+ mobile and web apps across multiple domains with minimal post-production defects
+                    </li>
+                    <li>Reduced critical defect leakage by 80% through improved regression coverage</li>
+                    <li>Achieved zero critical bugs in production for three consecutive releases</li>
+                    <li>Optimized test case design, cutting execution time by 70%</li>
+                    <li>Enhanced API validation accuracy and ensured 100% compliance with data privacy standards</li>
+                    <li>Mentored junior testers, boosting team productivity and efficiency</li>
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h2>WORKFLOW AUTOMATION</h2>
+                <p>Designed and implemented automation workflows using n8n to streamline project management, data
+                    processing, and communication across multiple platforms.</p>
+                <h4>Key Contributions:</h4>
+                <ul>
+                    <li>Built a WhatsApp-based project management bot integrated with Google Sheets for real-time status
+                        tracking</li>
+                    <li>Implemented dynamic time formatting and weekend skip logic for scheduled reminders</li>
+                    <li>Integrated external APIs for weather updates, jokes, and AI-powered smart replies</li>
+                    <li>Configured error-handling workflows with real-time notifications via WhatsApp</li>
+                    <li>Automated data entry, status updates, and report generation, reducing manual effort</li>
+                </ul>
+            </div>
+
+            <div class="resume-section">
+                <h2>TECHNICAL SKILLS</h2>
+                <div class="skills-grid">
+                    <div class="skill-category reveal" style="--delay: 1">
+                        <h4>Testing Expertise</h4>
+                        <ul>
+                            <li><i class="fas fa-hand-paper"></i> Manual Testing</li>
+                            <li><i class="fas fa-cogs"></i> Functional Testing</li>
+                            <li><i class="fas fa-redo"></i> Regression Testing</li>
+                            <li><i class="fas fa-tachometer-alt"></i> Performance Testing</li>
+                            <li><i class="fas fa-mobile-alt"></i> Mobile App Testing</li>
+                            <li><i class="fas fa-globe"></i> Web Application Testing</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category reveal" style="--delay: 1">
+                        <h4>Tools & Platforms</h4>
+                        <ul>
+                            <li><i class="fab fa-jira"></i> JIRA</li>
+                            <li><i class="fas fa-bug"></i> MantisBT</li>
+                            <li><i class="fas fa-paper-plane"></i> Postman</li>
+                            <li><i class="fab fa-jenkins"></i> Jenkins</li>
+                            <li><i class="fas fa-database"></i> SQL</li>
+                            <li><i class="fas fa-robot"></i> Selenium WebDriver</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category reveal" style="--delay: 1">
+                        <h4>Methodologies</h4>
+                        <ul>
+                            <li><i class="fas fa-sync-alt"></i> Agile (Scrum, SAFe)</li>
+                            <li><i class="fas fa-stream"></i> Waterfall</li>
+                            <li><i class="fas fa-user-check"></i> UAT Support</li>
+                            <li><i class="fas fa-code-branch"></i> CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-section">
+                <h2>EDUCATION</h2>
+                <div class="education-item">
+                    <h3>B.Tech in Mechanical Engineering</h3>
+                    <p>Biju Patnaik University of Technology (B.P.U.T) | 2015-2018</p>
+                    <p>Grade: 7.8/10</p>
+                </div>
+                <div class="education-item">
+                    <h3>Diploma in Mechanical Engineering</h3>
+                    <p>State Council for Technical Education & Vocational Training | 2012-2015</p>
+                    <p>Grade: 87%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .responsibilities,
+        .achievements {
+            padding-left: 20px;
+        }
+
+        .responsibilities li,
+        .achievements li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .responsibilities li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .achievements li:before {
+            content: "✓";
+            color: #27ae60;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .resume-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .resume-header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .resume-section {
+            margin-bottom: 30px;
+        }
+
+        .resume-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-item h3 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .company {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #3498db;
+        }
+
+        .project h4 {
+            margin-top: 15px;
+            color: #2c3e50;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .skill-category {
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .skill-category h4 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .skill-category ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .skill-category ul li i {
+            margin-right: 10px;
+            width: 16px;
+            text-align: center;
+            color: #3498db;
+            font-size: 14px;
+        }
+
+        .skill-category ul li i.fab {
+            color: #2c3e50;
+        }
+
+        .skill-category ul li i.fa-hand-paper {
+            color: #e74c3c;
+        }
+
+        .skill-category ul li i.fa-cogs {
+            color: #f39c12;
+        }
+
+        .skill-category ul li i.fa-redo {
+            color: #27ae60;
+        }
+
+        .skill-category ul li i.fa-tachometer-alt {
+            color: #9b59b6;
+        }
+
+        .skill-category ul li i.fa-mobile-alt {
+            color: #34495e;
+        }
+
+        .skill-category ul li i.fa-globe {
+            color: #3498db;
+        }
+
+        .skill-category ul li i.fa-bug {
+            color: #e74c3c;
+        }
+
+        .skill-category ul li i.fa-paper-plane {
+            color: #f39c12;
+        }
+
+        .skill-category ul li i.fa-database {
+            color: #27ae60;
+        }
+
+        .skill-category ul li i.fa-robot {
+            color: #9b59b6;
+        }
+
+        .skill-category ul li i.fa-sync-alt {
+            color: #3498db;
+        }
+
+        .skill-category ul li i.fa-stream {
+            color: #34495e;
+        }
+
+        .skill-category ul li i.fa-user-check {
+            color: #27ae60;
+        }
+
+        .skill-category ul li i.fa-code-branch {
+            color: #e67e22;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item h3 {
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        @media print {
+            .resume-container {
+                padding: 0;
+            }
+        }
+    </style>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="projects-container">
+            <h2>Projects</h2>
+
+            <div class="project-card reveal" style="--delay: 1">
+                <h3>1. E-commerce Platform for Pet Health & Nutrition</h3>
+                <p class="project-role"><strong>Role:</strong> Manual Test Engineer at Eptain & Company</p>
+                <div class="project-overview">
+                    <h4>Overview:</h4>
+                    <p>Worked on an e-commerce platform specializing in pet health and nutrition products, focusing on
+                        delivering a seamless shopping experience for pet owners.</p>
                     <ul>
                         <li>Designed and executed comprehensive test plans covering full workflows</li>
                         <li>Conducted manual & cross-browser testing (Chrome, Firefox, Safari)</li>
@@ -155,8 +527,15 @@
                         <li>Collaborated with dev & product teams during UAT</li>
                     </ul>
                 </div>
-                <div class="project">
-                    <h4>E-commerce Platform for Beauty & Wellness</h4>
+            </div>
+
+            <div class="project-card reveal" style="--delay: 1">
+                <h3>2. E-commerce Platform for Beauty & Wellness</h3>
+                <p class="project-role"><strong>Role:</strong> Manual Test Engineer at Eptain & Company</p>
+                <div class="project-overview">
+                    <h4>Overview:</h4>
+                    <p>Contributed to a beauty and wellness e-commerce platform with advanced recommendation and review
+                        features.</p>
                     <ul>
                         <li>Tested recommendation engine, reviews, checkout, and payment flows</li>
                         <li>Conducted regression and UI/UX testing after updates</li>
@@ -165,875 +544,620 @@
                 </div>
             </div>
 
-            <div class="experience-item reveal" style="--delay: 1">
-                <h3>Assistant Engineer Operation</h3>
-                <p class="company">Vivek Construction (TATA Steel) | Jul 2020 - Sep 2022</p>
-            </div>
-        </div>
-
-        <div class="resume-section">
-            <h2>KEY PROJECTS</h2>
-
-            <div class="project">
-                <h3>On-Demand Logistics, Transportation & Ride-Hailing Platform</h3>
-                <p><strong>Role:</strong> Mobile & Web Application Tester</p>
-                <p>Worked on an integrated mobility and commerce platform offering goods delivery, passenger ride-hailing, digital wallet, and e-commerce services.</p>
-                <p><strong>Technologies:</strong> JIRA, Postman, Mobile Testing (Android/iOS)</p>
-            </div>
-
-            <div class="project">
-                <h3>Health & Lifestyle Platform</h3>
-                <p><strong>Role:</strong> Mobile & Web Application Tester</p>
-                <p>Tested fitness and wellness platform with personalized workout plans, video training, and progress tracking.</p>
-                <p><strong>Technologies:</strong> JIRA, MantisBT, API Testing</p>
-            </div>
-        </div>
-
-        <div class="resume-section">
-            <h2>KEY RESPONSIBILITIES</h2>
-            <ul class="responsibilities">
-                <li>Conducted functional, regression, smoke, and UI/UX testing for mobile (Android/iOS) and web applications across diverse domains</li>
-                <li>Created, reviewed, and executed detailed test cases to validate core functionalities, business logic, and user flows</li>
-                <li>Performed cross-platform and cross-browser testing to ensure consistent performance and compatibility</li>
-                <li>Validated integrations for payment gateways, GPS tracking, chat systems, and booking flows</li>
-                <li>Logged and tracked defects using JIRA and MantisBT, collaborating with developers for resolution</li>
-                <li>Utilized Postman for API testing to verify data accuracy and error handling</li>
-                <li>Participated in Agile/Scrum ceremonies (stand-ups, sprint planning, retrospectives)</li>
-                <li>Ensured compliance with security, data privacy, and performance standards</li>
-                <li>Supported CI/CD pipelines using Jenkins for automated build verification</li>
-            </ul>
-        </div>
-
-        <div class="resume-section">
-            <h2>ACHIEVEMENTS</h2>
-            <ul class="achievements">
-                <li>Delivered 10+ mobile and web apps across multiple domains with minimal post-production defects</li>
-                <li>Reduced critical defect leakage by 80% through improved regression coverage</li>
-                <li>Achieved zero critical bugs in production for three consecutive releases</li>
-                <li>Optimized test case design, cutting execution time by 70%</li>
-                <li>Enhanced API validation accuracy and ensured 100% compliance with data privacy standards</li>
-                <li>Mentored junior testers, boosting team productivity and efficiency</li>
-            </ul>
-        </div>
-
-        <div class="resume-section">
-            <h2>WORKFLOW AUTOMATION</h2>
-            <p>Designed and implemented automation workflows using n8n to streamline project management, data processing, and communication across multiple platforms.</p>
-            <h4>Key Contributions:</h4>
-            <ul>
-                <li>Built a WhatsApp-based project management bot integrated with Google Sheets for real-time status tracking</li>
-                <li>Implemented dynamic time formatting and weekend skip logic for scheduled reminders</li>
-                <li>Integrated external APIs for weather updates, jokes, and AI-powered smart replies</li>
-                <li>Configured error-handling workflows with real-time notifications via WhatsApp</li>
-                <li>Automated data entry, status updates, and report generation, reducing manual effort</li>
-            </ul>
-        </div>
-
-        <div class="resume-section">
-            <h2>TECHNICAL SKILLS</h2>
-            <div class="skills-grid">
-                <div class="skill-category reveal" style="--delay: 1">
-                    <h4>Testing Expertise</h4>
+            <div class="project-card reveal" style="--delay: 1">
+                <h3>3. On-Demand Logistics, Transportation & Ride-Hailing Platform</h3>
+                <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                <div class="project-overview">
+                    <h4>Overview:</h4>
+                    <p>Worked on an integrated mobility and commerce platform offering:</p>
                     <ul>
-                        <li>Manual Testing</li>
-                        <li>Functional Testing</li>
-                        <li>Regression Testing</li>
-                        <li>Performance Testing</li>
-                        <li>Mobile App Testing</li>
-                        <li>Web Application Testing</li>
+                        <li>Goods delivery & courier services (mini-trucks, two-wheelers, etc.)</li>
+                        <li>Passenger ride-hailing with GPS-enabled tracking</li>
+                        <li>Digital wallet & payment services</li>
+                        <li>Online shopping & order management</li>
+                        <li>Customer and driver applications on Android/iOS with real-time booking and tracking</li>
+                    </ul>
+                    <div class="project-links">
+                        <h4>Applications & Links:</h4>
+                        <ul>
+                            <li>🌐 Main Website: <a href="https://faasthub.com/" target="_blank"
+                                    class="project-link">Click Here</a></li>
+                            <li>🚚 Logistics & Delivery: <a href="https://faasthub.com/faastdispatch" target="_blank"
+                                    class="project-link">Click Here</a></li>
+                            <li>💳 Digital Wallet: <a href="https://faasthub.com/faastcash" target="_blank"
+                                    class="project-link">Click Here</a></li>
+                            <li>🛒 E-commerce Module: <a href="https://faasthub.com/faastshop" target="_blank"
+                                    class="project-link">Click Here</a></li>
+                            <li>📱 Customer App:
+                                <a href="https://play.google.com/store/apps/details?id=com.fhcustomer&pcampaignid=web_share"
+                                    target="_blank" class="project-link">Android</a> |
+                                <a href="https://apps.apple.com/us/app/faastdrive/id6738036695" target="_blank"
+                                    class="project-link">iOS</a>
+                            </li>
+                            <li>🚖 Driver App:
+                                <a href="https://play.google.com/store/apps/details?id=com.fhdriver&pcampaignid=web_share"
+                                    target="_blank" class="project-link">Android</a> |
+                                <a href="#" class="project-link">iOS</a>
+                            </li>
+                        </ul>
+                    </div>
                     </ul>
                 </div>
-                <div class="skill-category reveal" style="--delay: 1">
-                    <h4>Tools & Platforms</h4>
-                    <ul>
-                        <li>JIRA</li>
-                        <li>MantisBT</li>
-                        <li>Postman</li>
-                        <li>Jenkins</li>
-                        <li>SQL</li>
-                        <li>Selenium WebDriver</li>
-                    </ul>
-                </div>
-                <div class="skill-category reveal" style="--delay: 1">
-                    <h4>Methodologies</h4>
-                    <ul>
-                        <li>Agile (Scrum, SAFe)</li>
-                        <li>Waterfall</li>
-                        <li>UAT Support</li>
-                        <li>CI/CD</li>
-                    </ul>
+                <div class="project-contributions">
+                    <p>Tested end-to-end booking, payment, GPS, and e-commerce workflows across Android, iOS, and web.
+                        Ensured smooth communication, real-time updates, and wallet transactions while collaborating in
+                        Agile/Scrum for timely, high-quality releases.</p>
                 </div>
             </div>
-        </div>
 
-        <div class="resume-section">
-            <h2>EDUCATION</h2>
-            <div class="education-item">
-                <h3>B.Tech in Mechanical Engineering</h3>
-                <p>Biju Patnaik University of Technology (B.P.U.T) | 2015-2018</p>
-                <p>Grade: 7.8/10</p>
-            </div>
-            <div class="education-item">
-                <h3>Diploma in Mechanical Engineering</h3>
-                <p>State Council for Technical Education & Vocational Training | 2012-2015</p>
-                <p>Grade: 87%</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    .resume-container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 20px;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-    }
-
-    .responsibilities,
-    .achievements {
-        padding-left: 20px;
-    }
-
-    .responsibilities li,
-    .achievements li {
-        margin-bottom: 8px;
-        position: relative;
-        padding-left: 15px;
-    }
-
-    .responsibilities li:before {
-        content: "•";
-        color: #3498db;
-        position: absolute;
-        left: 0;
-        font-weight: bold;
-    }
-
-    .achievements li:before {
-        content: "✓";
-        color: #27ae60;
-        position: absolute;
-        left: 0;
-        font-weight: bold;
-    }
-
-    .resume-header {
-        text-align: center;
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #3498db;
-    }
-
-    .resume-header h1 {
-        color: #2c3e50;
-        margin-bottom: 10px;
-    }
-
-    .contact-info {
-        margin-top: 15px;
-    }
-
-    .resume-section {
-        margin-bottom: 30px;
-    }
-
-    .resume-section h2 {
-        color: #2c3e50;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-        display: inline-block;
-    }
-
-    .experience-item {
-        margin-bottom: 25px;
-    }
-
-    .experience-item h3 {
-        margin-bottom: 5px;
-        color: #2c3e50;
-    }
-
-    .company {
-        font-style: italic;
-        color: #666;
-        margin-bottom: 10px;
-    }
-
-    .project {
-        margin-bottom: 20px;
-        padding-left: 15px;
-        border-left: 3px solid #3498db;
-    }
-
-    .project h4 {
-        margin-top: 15px;
-        color: #2c3e50;
-    }
-
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin-top: 15px;
-    }
-
-    .skill-category {
-        background-color: #f8f9fa;
-        padding: 15px;
-        border-radius: 5px;
-    }
-
-    .skill-category h4 {
-        margin-top: 0;
-        color: #2c3e50;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 5px;
-    }
-
-    .education-item {
-        margin-bottom: 15px;
-    }
-
-    .education-item h3 {
-        margin-bottom: 5px;
-        color: #2c3e50;
-    }
-
-    ul {
-        padding-left: 20px;
-        margin: 10px 0;
-    }
-
-    li {
-        margin-bottom: 5px;
-    }
-
-    @media print {
-        .resume-container {
-            padding: 0;
-        }
-    }
-</style>
-
-<!-- Projects Section -->
-<section id="projects" class="section">
-    <div class="projects-container">
-        <h2>Projects</h2>
-
-        <div class="project-card reveal" style="--delay: 1">
-            <h3>1. E-commerce Platform for Pet Health & Nutrition</h3>
-            <p class="project-role"><strong>Role:</strong> Manual Test Engineer at Eptain & Company</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <p>Worked on an e-commerce platform specializing in pet health and nutrition products, focusing on delivering a seamless shopping experience for pet owners.</p>
-                <ul>
-                    <li>Designed and executed comprehensive test plans covering full workflows</li>
-                    <li>Conducted manual & cross-browser testing (Chrome, Firefox, Safari)</li>
-                    <li>Executed regression testing after feature updates</li>
-                    <li>Collaborated with dev & product teams during UAT</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="project-card reveal" style="--delay: 1">
-            <h3>2. E-commerce Platform for Beauty & Wellness</h3>
-            <p class="project-role"><strong>Role:</strong> Manual Test Engineer at Eptain & Company</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <p>Contributed to a beauty and wellness e-commerce platform with advanced recommendation and review features.</p>
-                <ul>
-                    <li>Tested recommendation engine, reviews, checkout, and payment flows</li>
-                    <li>Conducted regression and UI/UX testing after updates</li>
-                    <li>Verified data integrity in recommendations and search flows</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="project-card reveal" style="--delay: 1">
-            <h3>3. On-Demand Logistics, Transportation & Ride-Hailing Platform</h3>
-            <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <p>Worked on an integrated mobility and commerce platform offering:</p>
-                <ul>
-                    <li>Goods delivery & courier services (mini-trucks, two-wheelers, etc.)</li>
-                    <li>Passenger ride-hailing with GPS-enabled tracking</li>
-                    <li>Digital wallet & payment services</li>
-                    <li>Online shopping & order management</li>
-                    <li>Customer and driver applications on Android/iOS with real-time booking and tracking</li>
-                </ul>
+            <div class="project-card reveal" style="--delay: 1">
+                <h3>4. Online Gifting Platform</h3>
+                <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                <div class="project-overview">
+                    <h4>Overview:</h4>
+                    <p>Tested an online gifting and flower delivery platform that allows customers to order flowers and
+                        personalized gifts with real-time delivery management. The solution included customer-facing
+                        mobile apps (Android/iOS), a delivery partner app, and a web ordering system.</p>
+                </div>
                 <div class="project-links">
                     <h4>Applications & Links:</h4>
                     <ul>
-                        <li>🌐 Main Website: <a href="https://faasthub.com/" target="_blank" class="project-link">Click Here</a></li>
-                        <li>🚚 Logistics & Delivery: <a href="https://faasthub.com/faastdispatch" target="_blank" class="project-link">Click Here</a></li>
-                        <li>💳 Digital Wallet: <a href="https://faasthub.com/faastcash" target="_blank" class="project-link">Click Here</a></li>
-                        <li>🛒 E-commerce Module: <a href="https://faasthub.com/faastshop" target="_blank" class="project-link">Click Here</a></li>
+                        <li>🌐 Website: <a href="https://athenaflowersa.com/en/" target="_blank"
+                                class="project-link">Click Here</a></li>
                         <li>📱 Customer App:
-                            <a href="https://play.google.com/store/apps/details?id=com.fhcustomer&pcampaignid=web_share" target="_blank" class="project-link">Android</a> |
-                            <a href="https://apps.apple.com/us/app/faastdrive/id6738036695" target="_blank" class="project-link">iOS</a>
+                            <a href="https://apps.apple.com/in/app/athena-flowers/id6468587082" target="_blank"
+                                class="project-link">iOS</a>
                         </li>
-                        <li>🚖 Driver App:
-                            <a href="https://play.google.com/store/apps/details?id=com.fhdriver&pcampaignid=web_share" target="_blank" class="project-link">Android</a> |
-                            <a href="#" class="project-link">iOS</a>
+                        <li>🚚 Delivery Partner App:
+                            <a href="https://play.google.com/store/apps/details?id=com.athena.driver&pcampaignid=web_share"
+                                target="_blank" class="project-link">Android</a> |
+                            <a href="https://play.google.com/store/apps/details?id=com.athena.driver&pcampaignid=web_share"
+                                target="_blank" class="project-link">iOS</a>
                         </li>
                     </ul>
                 </div>
-                </ul>
+                <div class="project-contributions">
+                    <p>Tested product selection, checkout, and payment workflows; validated UI/UX for a smooth shopping
+                        experience. Performed functional/regression testing post-releases and ensured cross-platform
+                        compatibility on Android, iOS, and web.</p>
+                </div>
             </div>
-            <div class="project-contributions">
-                <p>Tested end-to-end booking, payment, GPS, and e-commerce workflows across Android, iOS, and web. Ensured smooth communication, real-time updates, and wallet transactions while collaborating in Agile/Scrum for timely, high-quality releases.</p>
-            </div>
-        </div>
 
-        <div class="project-card reveal" style="--delay: 1">
-            <h3>4. Online Gifting Platform</h3>
-            <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <p>Tested an online gifting and flower delivery platform that allows customers to order flowers and personalized gifts with real-time delivery management. The solution included customer-facing mobile apps (Android/iOS), a delivery partner app, and a web ordering system.</p>
+            <div class="project-card reveal" style="--delay: 1">
+                <h3>5. Health & Lifestyle Platform</h3>
+                <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                <div class="project-overview">
+                    <h4>Overview:</h4>
+                    <p>Worked on a fitness and wellness platform offering personalized workout plans, video-based
+                        training, goal-setting, and progress tracking. The solution included mobile apps for Android/iOS
+                        and a web-based interface for users.</p>
+                </div>
+                <div class="project-links">
+                    <h4>Applications & Links:</h4>
+                    <ul>
+                        <li>🌐 Website: <a href="https://fiya.ae" target="_blank" class="project-link">Click Here</a>
+                        </li>
+                        <li>📱 Mobile App:
+                            <a href="https://play.google.com/store/apps/details?id=com.EAndR.fitnessapp&pcampaignid=web_share"
+                                target="_blank" class="project-link">Android</a> |
+                            <a href="https://apps.apple.com/in/app/fiya-the-ultimate-fitness-app/id6738675700"
+                                target="_blank" class="project-link">iOS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-contributions">
+                    <p>Tested workout modules, video streaming, and progress tracking; validated profiles, goals, and
+                        notifications. Ensured consistent cross-device experience through functional and regression
+                        testing post-releases.</p>
+                </div>
             </div>
-            <div class="project-links">
-                <h4>Applications & Links:</h4>
-                <ul>
-                    <li>🌐 Website: <a href="https://athenaflowersa.com/en/" target="_blank" class="project-link">Click Here</a></li>
-                    <li>📱 Customer App:
-                        <a href="https://apps.apple.com/in/app/athena-flowers/id6468587082" target="_blank" class="project-link">iOS</a>
-                    </li>
-                    <li>🚚 Delivery Partner App:
-                        <a href="https://play.google.com/store/apps/details?id=com.athena.driver&pcampaignid=web_share" target="_blank" class="project-link">Android</a> |
-                        <a href="https://play.google.com/store/apps/details?id=com.athena.driver&pcampaignid=web_share" target="_blank" class="project-link">iOS</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="project-contributions">
-                <p>Tested product selection, checkout, and payment workflows; validated UI/UX for a smooth shopping experience. Performed functional/regression testing post-releases and ensured cross-platform compatibility on Android, iOS, and web.</p>
-            </div>
-        </div>
 
-        <div class="project-card reveal" style="--delay: 1">
-            <h3>5. Health & Lifestyle Platform</h3>
-            <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <p>Worked on a fitness and wellness platform offering personalized workout plans, video-based training, goal-setting, and progress tracking. The solution included mobile apps for Android/iOS and a web-based interface for users.</p>
+            <div class="project-card reveal" style="--delay: 1">
+                <h3>6. Location-Based Tracking Solution</h3>
+                <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                <div class="project-overview">
+                    <h4>Overview:</h4>
+                    <p>A location-based solution with super admin, company admin, employee, and customer apps to locate
+                        and recover lost or misplaced items in real time.</p>
+                </div>
             </div>
-            <div class="project-links">
-                <h4>Applications & Links:</h4>
-                <ul>
-                    <li>🌐 Website: <a href="https://fiya.ae" target="_blank" class="project-link">Click Here</a></li>
-                    <li>📱 Mobile App:
-                        <a href="https://play.google.com/store/apps/details?id=com.EAndR.fitnessapp&pcampaignid=web_share" target="_blank" class="project-link">Android</a> |
-                        <a href="https://apps.apple.com/in/app/fiya-the-ultimate-fitness-app/id6738675700" target="_blank" class="project-link">iOS</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="project-contributions">
-                <p>Tested workout modules, video streaming, and progress tracking; validated profiles, goals, and notifications. Ensured consistent cross-device experience through functional and regression testing post-releases.</p>
-            </div>
-        </div>
 
-        <div class="project-card reveal" style="--delay: 1">
-            <h3>6. Location-Based Tracking Solution</h3>
-            <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <p>A location-based solution with super admin, company admin, employee, and customer apps to locate and recover lost or misplaced items in real time.</p>
+            <div class="project-card reveal" style="--delay: 1">
+                <h3>7. Challenge & Reward Application</h3>
+                <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                <div class="project-overview">
+                    <h4>Overview:</h4>
+                    <p>An interactive app where users can join challenges, compete with others, track progress, and earn
+                        rewards.</p>
+                </div>
+                <div class="project-contributions">
+                    <p>Tested challenge creation, progress tracking, leaderboards, rewards, and push notifications;
+                        validated UI/UX to boost user engagement.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="project-card reveal" style="--delay: 1">
-            <h3>7. Challenge & Reward Application</h3>
-            <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <p>An interactive app where users can join challenges, compete with others, track progress, and earn rewards.</p>
-            </div>
-            <div class="project-contributions">
-                <p>Tested challenge creation, progress tracking, leaderboards, rewards, and push notifications; validated UI/UX to boost user engagement.</p>
+            <div class="project-card reveal" style="--delay: 1">
+                <h3>8. Mental Health & Crisis Support Platform</h3>
+                <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                <div class="project-overview">
+                    <h4>Overview:</h4>
+                    <p>A secure and user-friendly mobile and web-based platform that connects individuals with certified
+                        counselors, mental health resources, and crisis assistance. The platform offers anonymous
+                        communication, emergency support, and a comprehensive resource library to promote emotional
+                        well-being.</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="project-card reveal" style="--delay: 1">
-            <h3>8. Mental Health & Crisis Support Platform</h3>
-            <p class="project-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-            <div class="project-overview">
-                <h4>Overview:</h4>
-                <p>A secure and user-friendly mobile and web-based platform that connects individuals with certified counselors, mental health resources, and crisis assistance. The platform offers anonymous communication, emergency support, and a comprehensive resource library to promote emotional well-being.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    <style>
+        .projects-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-<style>
-    .projects-container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-
-    .project-card {
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 25px;
-        margin-bottom: 30px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    }
-
-    .project-card ul {
-        list-style-type: disc;
-        margin-left: 20px;
-    }
-
-    .project-card h3 {
-        color: #2c3e50;
-        margin-top: 0;
-        border-bottom: 2px solid #3498db;
-        padding-bottom: 10px;
-        display: inline-block;
-    }
-
-    .project-role {
-        color: #666;
-        font-style: italic;
-        margin: 5px 0 15px;
-    }
-
-    .project-overview,
-    .project-links,
-    .project-contributions {
-        margin-bottom: 20px;
-    }
-
-    .project-overview h4,
-    .project-links h4 {
-        color: #2c3e50;
-        margin-bottom: 10px;
-    }
-
-    .project-overview ul {
-        padding-left: 20px;
-    }
-
-    .project-overview li {
-        margin-bottom: 5px;
-        position: relative;
-        padding-left: 15px;
-    }
-
-    .project-overview li:before {
-        content: "•";
-        color: #3498db;
-        position: absolute;
-        left: 0;
-    }
-
-    .link-list {
-        list-style: none;
-        padding: 0;
-    }
-
-    .link-list li {
-        margin-bottom: 8px;
-        padding-left: 20px;
-        position: relative;
-    }
-
-    .link-list li:before {
-        content: "→";
-        position: absolute;
-        left: 0;
-        color: #3498db;
-    }
-
-    .project-contributions {
-        background-color: #f8f9fa;
-        padding: 15px;
-        border-radius: 5px;
-        border-left: 4px solid #3498db;
-    }
-
-    @media (max-width: 768px) {
         .project-card {
-            padding: 15px;
-        }
-    }
-</style>
-
-<!-- Bugs Section -->
-<section id="bugs" class="section">
-    <div class="container">
-        <h2>Bug Reports</h2>
-        <div class="bug-reports">
-            <div class="bug-project">
-                <h3>🔹 Project 1: On-Demand Logistics, Transportation & Ride-Hailing Platform</h3>
-                <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-                <div class="bug-list">
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ GPS Inaccuracy on Low-End Android Devices</h4>
-                        <p><strong>Issue:</strong> Real-time location was delayed or mismatched.</p>
-                        <p><strong>Impact:</strong> Affected ETA and tracking reliability.</p>
-                        <p><strong>Resolution:</strong> Developers optimized GPS polling intervals and added fallback to network-based location.</p>
-                    </div>
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Digital Wallet Double Deduction</h4>
-                        <p><strong>Issue:</strong> Users were charged twice when network was interrupted mid-transaction.</p>
-                        <p><strong>Impact:</strong> Loss of user trust and support tickets.</p>
-                        <p><strong>Resolution:</strong> Implemented transaction state validation before processing.</p>
-                    </div>
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ E-commerce Checkout Crashes (iOS)</h4>
-                        <p><strong>Issue:</strong> Checkout page crashed on iOS 13 devices.</p>
-                        <p><strong>Impact:</strong> Abandoned carts and lost sales.</p>
-                        <p><strong>Resolution:</strong> Identified deprecated API call; fixed in next sprint.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bug-project">
-                <h3>🔹 Project 2: Online Gifting & Flower Delivery Platform</h3>
-                <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-                <div class="bug-list">
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Product Images Not Loading on Slow Connections</h4>
-                        <p><strong>Issue:</strong> High-resolution images weren't optimized.</p>
-                        <p><strong>Impact:</strong> Poor UX; users couldn't view products.</p>
-                        <p><strong>Resolution:</strong> Lazy loading and WebP compression added.</p>
-                    </div>
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Payment Gateway Session Timeout Bug</h4>
-                        <p><strong>Issue:</strong> Payment session expired if idle for >1 minute without warning.</p>
-                        <p><strong>Impact:</strong> Checkout abandonment.</p>
-                        <p><strong>Resolution:</strong> Timeout alert and auto-refresh implemented.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bug-project">
-                <h3>🔹 Project 3: Health & Lifestyle Platform</h3>
-                <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-                <div class="bug-list">
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Workout Videos Buffer Indefinitely (Web App)</h4>
-                        <p><strong>Issue:</strong> Videos failed to load on Safari and Firefox.</p>
-                        <p><strong>Impact:</strong> Users unable to follow workouts.</p>
-                        <p><strong>Resolution:</strong> Re-encoded videos in compatible formats.</p>
-                    </div>
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Progress Tracking Not Updating</h4>
-                        <p><strong>Issue:</strong> Daily goals were marked incomplete despite activity logs.</p>
-                        <p><strong>Cause:</strong> Timezone misalignment in server-side logic.</p>
-                        <p><strong>Resolution:</strong> Fixed timestamp logic and tested across timezones.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bug-project">
-                <h3>🔹 Project 4: Location-Based Tracking Solution</h3>
-                <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-                <div class="bug-list">
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Admin Dashboard Crashes on Bulk Data Load</h4>
-                        <p><strong>Issue:</strong> Fetching 1,000+ records crashed UI.</p>
-                        <p><strong>Cause:</strong> No pagination; memory overflow in browser.</p>
-                        <p><strong>Resolution:</strong> Added pagination and lazy loading.</p>
-                    </div>
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Incorrect Location Mapping on iOS Devices</h4>
-                        <p><strong>Issue:</strong> Items showed wrong map pins after recent iOS update.</p>
-                        <p><strong>Impact:</strong> Confusion in locating lost items.</p>
-                        <p><strong>Resolution:</strong> Updated MapKit integration and fixed coordinate conversion.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bug-project">
-                <h3>🔹 Project 5: Challenge & Reward Application</h3>
-                <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-                <div class="bug-list">
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Leaderboard Not Updating in Real Time</h4>
-                        <p><strong>Cause:</strong> Backend was caching scores and not refreshing on new entries.</p>
-                        <p><strong>Resolution:</strong> Switched to WebSocket-based updates.</p>
-                    </div>
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Challenge Join Button Not Responsive</h4>
-                        <p><strong>Cause:</strong> Button overlapped invisible UI element.</p>
-                        <p><strong>Resolution:</strong> Reworked touch event priorities.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bug-project">
-                <h3>🔹 Project 6: Mental Health & Crisis Support Platform</h3>
-                <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
-                <div class="bug-list">
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Anonymous Chat Disconnects on Idle</h4>
-                        <p><strong>Cause:</strong> Server auto-killed sessions after 2 minutes of inactivity.</p>
-                        <p><strong>Impact:</strong> Interrupted ongoing crisis conversations.</p>
-                        <p><strong>Resolution:</strong> Introduced heartbeat ping and idle timer reset.</p>
-                    </div>
-                    <div class="bug-item reveal" style="--delay: 1">
-                        <h4>❌ Counselor Notification Delay</h4>
-                        <p><strong>Issue:</strong> Push notifications delayed up to 10 minutes.</p>
-                        <p><strong>Resolution:</strong> Migrated to a real-time messaging queue for notifications.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    .bug-reports {
-        margin-top: 30px;
-    }
-
-    .bug-project {
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-        margin-bottom: 30px;
-    }
-
-    .bug-project h3 {
-        color: #2c3e50;
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-
-    .bug-role {
-        color: #666;
-        font-style: italic;
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-
-    .bug-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-    }
-
-    .bug-item {
-        background: #f8f9fa;
-        border-left: 4px solid #e74c3c;
-        padding: 15px;
-        border-radius: 0 4px 4px 0;
-    }
-
-    .bug-item h4 {
-        margin-top: 0;
-        color: #e74c3c;
-        font-size: 1.1em;
-    }
-
-    .bug-item p {
-        margin: 8px 0;
-        font-size: 0.95em;
-        line-height: 1.5;
-    }
-
-    .bug-item p strong {
-        color: #2c3e50;
-    }
-
-    @media (max-width: 768px) {
-        .bug-list {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
-
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <div class="contact-container">
-        <h2>Get In Touch</h2>
-        <div class="contact-content">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span class="contact-icon">📧</span>
-                    <a href="mailto:rp.rajkumar02@gmail.com" class="contact-link">rp.rajkumar02@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <span class="contact-icon">📱</span>
-                    <a href="tel:+918240000784" class="contact-link">(+91) 8240000784</a>
-                </div>
-            </div>
-            <div class="social-links">
-                <a href="https://x.com/RpRajkumar02" target="_blank" class="social-link twitter">
-                    <span class="social-icon">𝕏</span> Twitter
-                </a>
-                <a href="https://www.linkedin.com/in/raj-kumar-aa39p6002/" target="_blank" class="social-link linkedin">
-                    <span class="social-icon">in</span> LinkedIn
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    .contact-container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: center;
-    }
-
-    .contact-content {
-        background: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-        margin-top: 20px;
-    }
-
-    .contact-info {
-        margin-bottom: 30px;
-    }
-
-    .contact-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 15px 0;
-        font-size: 1.1em;
-    }
-
-    .contact-icon {
-        font-size: 1.5em;
-        margin-right: 15px;
-        color: #2c3e50;
-    }
-
-    .contact-link {
-        color: #3498db;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    .contact-link:hover {
-        color: #2980b9;
-        text-decoration: underline;
-    }
-
-    .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .social-link {
-        display: flex;
-        align-items: center;
-        padding: 12px 25px;
-        border-radius: 50px;
-        text-decoration: none;
-        color: white;
-        font-weight: 500;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .social-link:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .twitter {
-        background: #000000;
-    }
-
-    .linkedin {
-        background: #0a66c2;
-    }
-
-    .social-icon {
-        margin-right: 10px;
-        font-weight: bold;
-    }
-
-    @media (max-width: 600px) {
-        .contact-item {
-            flex-direction: column;
-            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .contact-icon {
-            margin-right: 0;
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .project-card h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .project-role {
+            color: #666;
+            font-style: italic;
+            margin: 5px 0 15px;
+        }
+
+        .project-overview,
+        .project-links,
+        .project-contributions {
+            margin-bottom: 20px;
+        }
+
+        .project-overview h4,
+        .project-links h4 {
+            color: #2c3e50;
             margin-bottom: 10px;
         }
 
-        .social-links {
-            flex-direction: column;
+        .project-overview ul {
+            padding-left: 20px;
+        }
+
+        .project-overview li {
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .project-overview li:before {
+            content: "•";
+            color: #3498db;
+            position: absolute;
+            left: 0;
+        }
+
+        .link-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .link-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .link-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+
+        .project-contributions {
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+
+        @media (max-width: 768px) {
+            .project-card {
+                padding: 15px;
+            }
+        }
+    </style>
+
+    <!-- Bugs Section -->
+    <section id="bugs" class="section">
+        <div class="container">
+            <h2>Bug Reports</h2>
+            <div class="bug-reports">
+                <div class="bug-project">
+                    <h3>🔹 Project 1: On-Demand Logistics, Transportation & Ride-Hailing Platform</h3>
+                    <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                    <div class="bug-list">
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ GPS Inaccuracy on Low-End Android Devices</h4>
+                            <p><strong>Issue:</strong> Real-time location was delayed or mismatched.</p>
+                            <p><strong>Impact:</strong> Affected ETA and tracking reliability.</p>
+                            <p><strong>Resolution:</strong> Developers optimized GPS polling intervals and added
+                                fallback to network-based location.</p>
+                        </div>
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Digital Wallet Double Deduction</h4>
+                            <p><strong>Issue:</strong> Users were charged twice when network was interrupted
+                                mid-transaction.</p>
+                            <p><strong>Impact:</strong> Loss of user trust and support tickets.</p>
+                            <p><strong>Resolution:</strong> Implemented transaction state validation before processing.
+                            </p>
+                        </div>
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ E-commerce Checkout Crashes (iOS)</h4>
+                            <p><strong>Issue:</strong> Checkout page crashed on iOS 13 devices.</p>
+                            <p><strong>Impact:</strong> Abandoned carts and lost sales.</p>
+                            <p><strong>Resolution:</strong> Identified deprecated API call; fixed in next sprint.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bug-project">
+                    <h3>🔹 Project 2: Online Gifting & Flower Delivery Platform</h3>
+                    <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                    <div class="bug-list">
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Product Images Not Loading on Slow Connections</h4>
+                            <p><strong>Issue:</strong> High-resolution images weren't optimized.</p>
+                            <p><strong>Impact:</strong> Poor UX; users couldn't view products.</p>
+                            <p><strong>Resolution:</strong> Lazy loading and WebP compression added.</p>
+                        </div>
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Payment Gateway Session Timeout Bug</h4>
+                            <p><strong>Issue:</strong> Payment session expired if idle for >1 minute without warning.
+                            </p>
+                            <p><strong>Impact:</strong> Checkout abandonment.</p>
+                            <p><strong>Resolution:</strong> Timeout alert and auto-refresh implemented.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bug-project">
+                    <h3>🔹 Project 3: Health & Lifestyle Platform</h3>
+                    <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                    <div class="bug-list">
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Workout Videos Buffer Indefinitely (Web App)</h4>
+                            <p><strong>Issue:</strong> Videos failed to load on Safari and Firefox.</p>
+                            <p><strong>Impact:</strong> Users unable to follow workouts.</p>
+                            <p><strong>Resolution:</strong> Re-encoded videos in compatible formats.</p>
+                        </div>
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Progress Tracking Not Updating</h4>
+                            <p><strong>Issue:</strong> Daily goals were marked incomplete despite activity logs.</p>
+                            <p><strong>Cause:</strong> Timezone misalignment in server-side logic.</p>
+                            <p><strong>Resolution:</strong> Fixed timestamp logic and tested across timezones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bug-project">
+                    <h3>🔹 Project 4: Location-Based Tracking Solution</h3>
+                    <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                    <div class="bug-list">
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Admin Dashboard Crashes on Bulk Data Load</h4>
+                            <p><strong>Issue:</strong> Fetching 1,000+ records crashed UI.</p>
+                            <p><strong>Cause:</strong> No pagination; memory overflow in browser.</p>
+                            <p><strong>Resolution:</strong> Added pagination and lazy loading.</p>
+                        </div>
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Incorrect Location Mapping on iOS Devices</h4>
+                            <p><strong>Issue:</strong> Items showed wrong map pins after recent iOS update.</p>
+                            <p><strong>Impact:</strong> Confusion in locating lost items.</p>
+                            <p><strong>Resolution:</strong> Updated MapKit integration and fixed coordinate conversion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bug-project">
+                    <h3>🔹 Project 5: Challenge & Reward Application</h3>
+                    <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                    <div class="bug-list">
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Leaderboard Not Updating in Real Time</h4>
+                            <p><strong>Cause:</strong> Backend was caching scores and not refreshing on new entries.</p>
+                            <p><strong>Resolution:</strong> Switched to WebSocket-based updates.</p>
+                        </div>
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Challenge Join Button Not Responsive</h4>
+                            <p><strong>Cause:</strong> Button overlapped invisible UI element.</p>
+                            <p><strong>Resolution:</strong> Reworked touch event priorities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bug-project">
+                    <h3>🔹 Project 6: Mental Health & Crisis Support Platform</h3>
+                    <p class="bug-role"><strong>Role:</strong> Mobile & Web Application Tester</p>
+                    <div class="bug-list">
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Anonymous Chat Disconnects on Idle</h4>
+                            <p><strong>Cause:</strong> Server auto-killed sessions after 2 minutes of inactivity.</p>
+                            <p><strong>Impact:</strong> Interrupted ongoing crisis conversations.</p>
+                            <p><strong>Resolution:</strong> Introduced heartbeat ping and idle timer reset.</p>
+                        </div>
+                        <div class="bug-item reveal" style="--delay: 1">
+                            <h4>❌ Counselor Notification Delay</h4>
+                            <p><strong>Issue:</strong> Push notifications delayed up to 10 minutes.</p>
+                            <p><strong>Resolution:</strong> Migrated to a real-time messaging queue for notifications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .bug-reports {
+            margin-top: 30px;
+        }
+
+        .bug-project {
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .bug-project h3 {
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .bug-role {
+            color: #666;
+            font-style: italic;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .bug-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .bug-item {
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .bug-item h4 {
+            margin-top: 0;
+            color: #e74c3c;
+            font-size: 1.1em;
+        }
+
+        .bug-item p {
+            margin: 8px 0;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .bug-item p strong {
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .bug-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <a href="mailto:rp.rajkumar02@gmail.com" class="contact-link">rp.rajkumar02@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <a href="tel:+918240000784" class="contact-link">(+91) 8240000784</a>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://x.com/RpRajkumar02" target="_blank" class="social-link twitter">
+                        <span class="social-icon">𝕏</span> Twitter
+                    </a>
+                    <a href="https://www.linkedin.com/in/raj-kumar-aa39p6002/" target="_blank"
+                        class="social-link linkedin">
+                        <span class="social-icon">in</span> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-content {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
             align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+            color: #2c3e50;
+        }
+
+        .contact-link {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .social-link {
-            width: 200px;
-            justify-content: center;
+            display: flex;
+            align-items: center;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-    }
-</style>
 
-<!-- Scripts -->
-<script>
-    /* === Background Slideshow === */
-    const images = [
-      "M6iNoAmBk2StPzvnDHyJS9.png",
-      "RpHoz5ABQqAZ8mYEEa5pCo.png",
-      "6b888481-ccc1-4125-97cd-bbcdf1f5523d.png"
-    ];
-    let currentIndex = 0;
-    const hero = document.getElementById("home");
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
 
-    function changeBackground() {
-      hero.style.backgroundImage = `url(${images[currentIndex]})`;
-      currentIndex = (currentIndex + 1) % images.length;
-    }
-    changeBackground();
-    setInterval(changeBackground, 5000);
+        .twitter {
+            color: #000000;
+        }
 
-    /* === Typewriter Effect === */
-    const roles = ["QA Engineer", "Bug Hunter", "Tester"];
-    let roleIndex = 0;
-    let charIndex = 0;
-    const roleEl = document.getElementById("role");
+        .linkedin {
+            color: #0a66c2;
+        }
 
-    function typeRole() {
-      if (charIndex < roles[roleIndex].length) {
-        roleEl.textContent += roles[roleIndex].charAt(charIndex);
-        charIndex++;
-        setTimeout(typeRole, 120);
-      } else {
-        setTimeout(() => {
-          roleEl.textContent = "";
-          charIndex = 0;
-          roleIndex = (roleIndex + 1) % roles.length;
-          typeRole();
-        }, 1500);
-      }
-    }
-    typeRole();
-</script>
+        .social-icon {
+            margin-right: 10px;
+            font-weight: bold;
+        }
 
-<!-- Mobile Menu -->
-<script src="mobile-menu.js"></script>
+        @media (max-width: 600px) {
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
 
-<!-- Background Effect -->
-<script src="background-effect.js"></script>
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-link {
+                width: 200px;
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script>
+        /* === Background Slideshow === */
+        const images = [
+            "M6iNoAmBk2StPzvnDHyJS9.png",
+            "RpHoz5ABQqAZ8mYEEa5pCo.png",
+            "6b888481-ccc1-4125-97cd-bbcdf1f5523d.png"
+        ];
+        let currentIndex = 0;
+        const hero = document.getElementById("home");
+
+        function changeBackground() {
+            hero.style.backgroundImage = `url(${images[currentIndex]})`;
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+        changeBackground();
+        setInterval(changeBackground, 5000);
+
+        /* === Typewriter Effect === */
+        const roles = ["QA Engineer", "Bug Hunter", "Tester"];
+        let roleIndex = 0;
+        let charIndex = 0;
+        const roleEl = document.getElementById("role");
+
+        function typeRole() {
+            if (charIndex < roles[roleIndex].length) {
+                roleEl.textContent += roles[roleIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(typeRole, 120);
+            } else {
+                setTimeout(() => {
+                    roleEl.textContent = "";
+                    charIndex = 0;
+                    roleIndex = (roleIndex + 1) % roles.length;
+                    typeRole();
+                }, 1500);
+            }
+        }
+        typeRole();
+    </script>
+
+    <!-- Mobile Menu -->
+    <script src="mobile-menu.js"></script>
+
+    <!-- Background Effect -->
+    <script src="background-effect.js"></script>
 
 </body>
+
 </html>
