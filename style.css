@@ -7,7 +7,7 @@
 
 :root {
   --primary-color: #2563eb;
-  --text-color: #333;
+  --text-color: #4a5568;
   --bg-color: #f9fafb;
   --spacing-unit: 1rem;
 }
@@ -91,7 +91,7 @@ body, html {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  z-index: 1000;
+  z-index: 9999;
   transition: all 0.3s ease;
 }
 
@@ -101,9 +101,9 @@ body, html {
   border-radius: 50%;
   border: none;
   background: white;
-  color: #333;
+  color: #4a5568;
   font-size: 18px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
@@ -126,7 +126,7 @@ body, html {
   position: fixed;
   top: 20px;
   right: 20px;
-  z-index: 1001;
+  z-index: 10000;
   background: var(--primary-color);
   color: white;
   border: none;
@@ -135,7 +135,7 @@ body, html {
   border-radius: 50%;
   font-size: 24px;
   cursor: pointer;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
   transition: all 0.3s ease;
 }
 
@@ -162,6 +162,7 @@ body, html {
     padding: 80px 10px 20px;
     transform: none;
     transition: left 0.3s ease;
+    z-index: 9999;
   }
   
   .sidebar.active {
@@ -317,7 +318,7 @@ body, html {
   font-size: 60px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #1e293b;
+  color: #2d3748;
 }
 .intro h2 {
   font-size: 28px;
@@ -336,7 +337,7 @@ body, html {
   font-size: 24px;
 }
 .social a {
-  color: #333;
+  color: #4a5568;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -361,7 +362,7 @@ body, html {
 .section h2 {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #1e293b;
+  color: #2d3748;
 }
 .section p {
   font-size: 18px;
